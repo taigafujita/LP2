@@ -105,7 +105,7 @@ a{
   color: #3163E2;
   background-color: white;
   border-radius: 20px;
-  width: 350px;
+  width: 90%;
   height: 30px;
   text-align: center;
   padding-top: 6px;
@@ -113,7 +113,9 @@ a{
 }
 .download {
   padding-top: 3em;
-  padding-left: 12em;
+}
+.download img{
+  width: 90%;
 }
 .right img{
   width: 80%;
@@ -224,6 +226,31 @@ a{
 }
 
 .introdaction-text-left-two p {
+  font-size: 15px;
+  font-weight: 100;
+  padding-top: 2em;
+  letter-spacing: 0.2em;
+  text-align: left;
+  line-height: 1.5;
+  width: 100%;
+}
+.introdaction-text-left-three {
+  text-align: left;
+  color: white;
+  width: 20%;
+}
+
+.introdaction-text-left-three h2 {
+  font-size: 23px;
+  padding-bottom: 1em;
+}
+
+.introdaction-text-left-three h3 {
+  font-weight: 100;
+  line-height: 2em;
+}
+
+.introdaction-text-left-three p {
   font-size: 15px;
   font-weight: 100;
   padding-top: 2em;
@@ -368,10 +395,11 @@ a{
 .news-wrap{
   text-align: center;
   border: #3163E2 2px solid;
-  margin: 0 30em;
+  margin: 0 auto;
   margin-bottom: 3em;
   border-radius: 10px;
   margin-top: 4em;
+  width: 80%;
 }
 .news-title {
   color: #3163E2;
@@ -415,7 +443,7 @@ a{
 }
 .footer-wrap{
   background-color: #161616;
-  height: 400px;
+  height: 300px;
   margin-top: 4em;
   color: #ffffff;
 }
@@ -448,6 +476,10 @@ a{
 .mail{
   padding-right: 1em;
 }
-{
-  display: none;
+.copy-light p{
+  text-align: center;
+  font-size: 13px;
+  font-weight: 100;
+  letter-spacing: 6px;
+  padding-top: 3em;
 }

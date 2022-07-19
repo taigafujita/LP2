@@ -1,5 +1,64 @@
 @charset "UTF-8";
 
+@media screen and (max-width: 1024px) {
+  html{
+    width: 100%;
+  }
+  .header-list li{
+    font-size: 20px;
+    padding-left: 2em;
+  }
+  .header-icon{
+    padding-left: 1em;
+  }
+  .header-icon img{
+    width: 90%;
+  }
+  .header-sub h1{
+    width: 1000px;
+    letter-spacing: 10px;
+  }
+  .header-sub span{
+  }
+  .header-main{
+    padding-left: 0;
+    height: 620px;
+  }
+  .main-text p{
+    width: 70%;
+  }
+  .right img{
+    width: 90%;
+  }
+  .download{
+    padding-left: 10em;
+  }
+  .download img{
+    width: 45%;
+  }
+  .main-text{
+    padding-top: 0;
+  }
+  .introdaction-main{
+    width: 100%;
+  }
+  .introdaction-text-left{
+    width: 30%;
+  }
+  .introdaction-main-two{
+    width: 100%;
+    padding-right: 4em;
+  }
+  .introdaction-text-left-two{
+    width: 30%;
+  }
+  .howto-icon{
+    padding-left: 19em;
+  }
+  .footer-center{
+    padding-left: 10em;
+  }
+}
 @media screen and (max-width: 768px) {
   header .drawer {
       visibility: visible;
@@ -7,28 +66,25 @@
       position: absolute;
       top: 15px;
       right: 15px;
-      border-top: solid 4px #aaaaaa;
+      border-top: solid 4px #dcdcdc;
       cursor: pointer;
       z-index: 100;
     }
-  
     header .drawer::before,
     header .drawer::after {
       content: "";
       display: block;
       width: 24px;
-      background: #aaaaaa;
+      background: #dcdcdc;
       height: 4px;
       position: absolute;
       top: 0;
       right: 0;
       transition: all 0.5s;
     }
-  
     header .drawer::before {
       top: 6px;
     }
-  
     header .drawer::after {
       top: 15px;
     }
@@ -40,13 +96,18 @@
       top: 0;
       left: 0;
       z-index: 50;
-      background: #fff;
+      background: rgb(31, 80, 255);
+      opacity: 0.9;
     }
     header .header-list ul{
       display: block;
     }
     header .header-list ul li{
-      margin: 5% auto;
+      margin: 8% auto;
+      text-align: center;
+      color: rgba(248, 250, 255, 1);
+      font-size: 25px;
+      font-weight: 500;
     }
     header .header-list ul li a{
       line-height: 3;
@@ -55,51 +116,71 @@
     header .header-list ul li.contact{
       width: 30%;
     }
-        body.nav-open header .drawer {
-          border-top: 0;
-        }
-    
-        body.nav-open header .drawer::before {
-          top: 9px;
-          transform: rotate(-45deg);
-        }
-    
-        body.nav-open header .drawer::after {
-          top: 9px;
-          transform: rotate(45deg);
-        }
+    body.nav-open header .drawer {
+      border-top: 0;
+    }
+    body.nav-open header .drawer::before {
+      top: 9px;
+      transform: rotate(-45deg);
+    }
+    body.nav-open header .drawer::after {
+      top: 9px;
+      transform: rotate(45deg);
+    }
 
 /*メイン*/
+html{
+  width: 100%;
+}
 .header-icon{
   padding-left: 0;
 }
 .header-sub{
-  width: 90%;
+  width: 98%;
+}
+.header-sub p{
+  padding-top: 2.5em;
+}
+.header-sub h1{
+  font-size: 50px;
+  padding-left: 1em;
+  width: 100%;
 }
 .header-main{
   padding-left: 0;
   justify-content: flex-start;
+  background-size: cover;
+  height: 600px;
 }
 .right{
   padding-top: 5em;
   padding-left: 2em;
+  width: 100%;
 }
 .header-left{
   width: 50%;
-  text-align: ;
+}
+.header-text{
+  padding-left: 3em;
+}
+.header-text h3{
+  margin-top: 1em;
 }
 .apli img{
   padding-left: 0;
 }
 .download{
   display: flex;
-  padding-left: 15em;
-  padding-top: 5em;
+  padding-left: 3em;
+  padding-top: 2em;
 }
 .download img{
   width: 150px;
 }
 .introdaction-main{
+  align-items: flex-start;
+}
+.introdaction-main-two{
   align-items: flex-start;
 }
 .introdaction-text-left{
@@ -111,10 +192,15 @@
   padding-right: 3em
 }
 .introdaction-text-right-two{
-  padding-right: ;
+}
+.introdaction-three{
+  padding-top: 7em;
 }
 .introdaction-main-three{
   align-items: flex-start;
+}
+.howto-wrap{
+  padding-top: 8em;
 }
 .howto-icon{
   margin: 0 auto;
@@ -126,6 +212,15 @@
 .QA-wrap{
   margin-bottom: 3em;
 }
+.howto-title img{
+  width: 30%;
+}
+.ios img{
+  width: 70%;
+}
+.android img{
+  width: 60%;
+}
 .news-wrap{
   margin: 0 auto;
   width: 70%
@@ -134,15 +229,18 @@
   margin-top: 2em
 }
 .border{
-  border: ;
+  border: 0;
 }
 /*footer*/
 .footer-wrap{
   width:100%;
   height: 200px;
+  margin-top: 4em;
 }
 .footer-left{
   width: 10%;
+}
+.footer-left p{
   padding-left: 1em;
 }
 .footer-center{
@@ -150,26 +248,38 @@
 }
 .footer-right{
   text-align: right;
-  padding-left: 390px;
+  padding-left: 370px;
+}
+.copy-light p{
+  padding-top: 1em;
 }
 }
 
 /*スマホサイズ*/
 @media screen and (max-width: 480px) {
-  .header-main{
-    padding-left: 0;
-    padding-top: 0em;
-    width: 100%;
-  }
+.header-main{
+  padding-left: 0;
+  padding-top: 0em;
+  width: 100%;
+  height: 550px;
+}
+.header-text h3{
+  margin: 0 auto;
+}
+.header-sub{
+  width: 100%;
+}
 .header-sub p{
   padding-top: 3em;
   font-size: 30px;
+  transform: none;
 }
 .header-sub h1{
   font-size: 22px;
   padding-top: 6em;
-  padding-left: 1em;
   padding-right: 0;
+  transform: none;
+  letter-spacing: 5px;
 }
 .header-left{
   width: 100%;
@@ -178,7 +288,7 @@
 }
 .header-text{
   width: 100%;
-  padding-left: 1em;
+  padding-left: 0.8em;
   text-align: center;
 }
 .header-text h4{
@@ -195,6 +305,7 @@
   flex-flow: column;
   text-align: center;
   margin: 0 auto;
+  padding-top: 3em;
 }
 .apli h2{
   order: 2;
@@ -215,17 +326,18 @@
   width: 100%;
 }
 .download{
-  padding-left: 2.4em;
   padding-top: 1em;
-  align-items: center;
-
+  padding-left: 0;
+  justify-content: center;
 }
+.download img{
+  }
 .header-text h3{
   padding-left: 0;
 }
 .introdaction-wrap{
   padding-top: 0;
-  height: 800px;
+  height: 850px;
 }
 .introdaction-title{
   padding-top: 11em;
@@ -243,10 +355,10 @@
 .introdaction-text-left{
   width: 100%;
   margin: 0 auto;
-  padding-left: 3em;
 }
 .introdaction-two{
-  padding-top: 5em;
+  padding-top: 10em;
+  height: 650px;
 }
 .introdaction-three{
   padding-top: 5em;
@@ -258,7 +370,11 @@
 .introdaction-text-left-two {
   width: 100%;
   margin: 0 auto;
-  padding-left: 3em;
+  padding-right: 0;
+  width: 80%;
+}
+.introdaction-main-two{
+  padding-right: 0;
 }
 .introdaction-main-two p {
   width: 100%;
@@ -266,7 +382,7 @@
 .introdaction-text-left-three {
   width: 100%;
   margin: 0 auto;
-  padding-left: 3em;
+  text-align: center;
 }
 .introdaction-main-three p {
   width: 90%;
@@ -282,9 +398,16 @@
 }
 .ios{
   padding-left: 1em;
+  padding-top: 5px;
+}
+.ios h4{
+  padding-top: 1.3em;
 }
 .ios img{
-  width:95%;
+  width:80%;
+}
+.bar{
+  width: 300px;
 }
 .QA-main p{
   line-height: 1.5;
@@ -294,15 +417,18 @@
 }
 .news-main{
   text-align: center;
-  padding-right: 2em;
+  padding-right: 0;
   padding-bottom: 0;
+  padding-left: 0;
 }
 .text{
   font-size: 14px;
   line-height: 3;
+  padding-left: 0;
 }
 .footer-wrap{
   height: 300px;
+  width: 100%;
 }
 .footer-main{
   display: block;
@@ -311,18 +437,21 @@
   display: none;
 }
 .footer-right{
-  padding-left: 10em;
+  margin-top: 2em;
   padding: 0;
-  text-align: left;
+  text-align: center;
 }
 .footer-right p{
-  padding-top: 1em;
-  padding-left: 2em;
+  padding-top: 0;
+  padding-left: 1em;
+  line-height: 30px;
+}
+.footer-left{
+  width: 100%;
+  margin: 0 auto;
 }
 .footer-left p{
   padding-left: 0;
-}
-.mail {
-  padding-left: 1em;
+  margin: 0 auto;
 }
 }
